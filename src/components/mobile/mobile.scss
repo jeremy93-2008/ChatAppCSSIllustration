@@ -1,0 +1,107 @@
+.mobile__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 618px;
+  background: hsl(270, 20%, 96%);
+  border: solid 6px white;
+  border-radius: 30px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 10px lightgray;
+  overflow: hidden;
+  transform: scale(0.8) translateY(45px);
+
+  .mobile__notch {
+    position: absolute;
+    width: 128px;
+    height: 22px;
+    background: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    z-index: 20;
+  }
+
+  .mobile__header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to left,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: white;
+    padding-top: 20px;
+    padding-left: 15px;
+    height: 72px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .mobile__header--profile {
+        img {
+          width: 32px;
+          height: 32px;
+          border: solid 1px white;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-left: 10px;
+        }
+    }
+
+    .mobile__header--text {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      flex: 1;
+      h4 {
+        padding: 0;
+        margin: 0;
+        font-weight: 400;
+      }
+      span {
+        font-size: 10px;
+        color: hsl(276, 100%, 81%);
+      }
+    }
+
+    .mobile__header--option {
+      margin-right: 15px;
+    }
+  }
+  .mobile__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width:100%;
+    padding-top: 15px;
+    .mobile__input {
+      position: absolute;
+      display: flex;
+      bottom: 15px;
+      left: 10px;
+      width: 85%;
+      padding: 10px;
+      background: white;
+      border-radius: 20px;
+
+      & > input {
+        border: none;
+        font-size: 12px;
+        outline: none;
+      }
+
+      & > .mobile__submit {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        color: white;
+        border-radius: 50%;
+        right: 4px;
+        bottom: 2px;
+        height: 32px;
+        width: 32px;
+      }
+    }
+  }
+}

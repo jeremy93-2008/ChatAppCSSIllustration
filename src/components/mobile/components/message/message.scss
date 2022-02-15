@@ -1,0 +1,47 @@
+.message__container{
+  background: hsl(276, 55%, 92%);
+  padding: 10px;
+  font-size: 10px;
+  color: hsl(276, 55%, 52%);
+  max-width: 165px;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+
+  &.your__message {
+    background: white;
+    box-shadow: 5px 5px 10px lightgray;
+    color: hsl(271, 15%, 43%);
+    align-self: flex-end;
+    margin-right: 10px;
+  }
+
+  &.image__message {
+    background: transparent;
+    display: flex;
+    margin-right: 50px;
+    box-shadow: none;
+    & > img {
+      border-radius: 15px;
+      width: 64px;
+      margin-right: 10px;
+    }
+  }
+
+  &.walk__message {
+    display: flex;
+    align-items: center;
+    max-width: 185px;
+    color: hsl(276, 55%, 92%);
+    background: linear-gradient(to right,hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    & > svg {
+      margin-right: 5px;
+    }
+    & > .price {
+      margin-left: 15px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
